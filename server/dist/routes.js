@@ -21,3 +21,8 @@ exports.routes.post('/feedbacks', async (req, res) => {
     });
     return res.status(201).json();
 });
+exports.routes.get('/', async (req, res) => {
+    return res.status(201).json({
+        message: 'Hello World from server'
+    });
+});
